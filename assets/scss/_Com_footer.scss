@@ -1,0 +1,181 @@
+
+footer {
+
+.footerTop {
+	background: $foober_bg_color;
+	padding: 50px 0;
+	clear: both;
+}
+.footerLogo {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 50px;
+	img {
+		width: 200px;
+	}
+}
+.footer-row {
+	display: flex;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+.footer-col {
+	width: 33.3%;
+	ul {
+		li {
+			text-transform: uppercase;
+			line-height: 1.1;
+			padding-bottom: 18px;
+			a {
+				color: $white-color;
+        font-family: $dawat-font-hyft;
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: normal;
+			}
+		}
+	}
+}
+.footer-head {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	padding-bottom: 18px;
+	color: $white-color;
+	font-weight: bold;
+  font-family: $dawat-font-hyft-bold;
+}
+.footer-detail {
+	color: $white-color;
+	padding-bottom: 15px;
+	font-family: $dawat-font-hyft;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	display: flex;
+	span.ft-icon {
+		padding-top: 3px;
+		padding-right: 15px;
+    display: inline-block;
+	}
+	a {
+		color: $white-color;
+    text-decoration: none;
+	}
+}
+.footer-detail.care-no {
+	display: block;
+	.ft-icon {
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+.care-no {
+	a.call {
+		color: $golden-color;
+		display: block;
+		font-size: 1.6rem;
+		margin-top: 5px;
+		font-family: $dawat-font-hyft-bold;
+		font-weight: bold;  
+    position: relative;
+    left: 39px;
+	}
+}
+.footer-form {
+	position: relative;
+	input.ft-email {
+		width: 100%;
+		height: 40px;
+		border: 0;
+		border-bottom: 1px solid $gray-color;
+		background: none;
+		margin-bottom: 10px;
+		color: $white-color;
+		font-size: 1.2rem;
+		font-family: $dawat-font-corda;
+	}
+	.ft-submit {
+		width: 40px;
+		display: block;
+		background: none;
+		border: 0;
+		height: 40px;
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: url("../images/submit-icon.png") no-repeat right 5px center;
+	}
+}
+.error-msg {
+	color:$white-color;
+	font-size: 0.75rem;
+	position: absolute;
+	display: none;
+	bottom: -10px;
+}
+.footer-social {
+	padding: 18px 0 10px;
+	ul {
+		li {
+			display: inline-block;
+			margin-right: 12px;
+			padding-bottom: 0;
+		}
+	}
+}
+.social-head {
+	color: $gray-color;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	margin-bottom: 10px;
+  font-family: $dawat-font-corda;
+}
+.footerCopyright {
+	background: $black-color-light;
+	width: 100%;
+	text-align: center;
+	color: $white-color;
+	font-size: 1.4rem;
+	padding: 20px 0 10px;
+	line-height: 1.5rem;
+  font-family: $dawat-font-corda;
+  font-weight: normal;
+}
+#backTop {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	&::after {
+		content: "";
+		background: url(../images/backTop.png) no-repeat center center;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 50%;
+		height: 15px;
+		width: 15px;
+		transform: translateY(-50%);
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+#backTop.show {
+	opacity: 1;
+	visibility: visible;
+	border: 2px solid #c38c27;
+}
+
+}

@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-Italic.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-Bold.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-Light.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-ExtraLightItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-BoldItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-ExtraLight.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-LightItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-Medium.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Corda';
+  src: url('/dist/css/fonts/Corda-MediumItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/Corda-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBold';
+  src: url('/dist/css/fonts/HoftypeCordaBold.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBold';
+  src: url('/dist/css/fonts/HoftypeCordaBold.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBoldItalic';
+  src: url('/dist/css/fonts/HoftypeCordaBoldItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBold';
+  src: url('/dist/css/fonts/HoftypeCordaBold.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBold';
+  src: url('/dist/css/fonts/HoftypeCordaBold.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBoldItalic';
+  src: url('/dist/css/fonts/HoftypeCordaBoldItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBoldItalic';
+  src: url('/dist/css/fonts/HoftypeCordaBoldItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaBoldItalic';
+  src: url('/dist/css/fonts/HoftypeCordaBoldItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaItalic';
+  src: url('/dist/css/fonts/HoftypeCordaItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaItalic';
+  src: url('/dist/css/fonts/HoftypeCordaItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaItalic';
+  src: url('/dist/css/fonts/HoftypeCordaItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaLight';
+  src: url('/dist/css/fonts/HoftypeCordaLight.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaItalic';
+  src: url('/dist/css/fonts/HoftypeCordaItalic.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaMedium';
+  src: url('/dist/css/fonts/HoftypeCordaMedium.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaLight';
+  src: url('/dist/css/fonts/HoftypeCordaLight.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaMedium';
+  src: url('/dist/css/fonts/HoftypeCordaMedium.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaMedium';
+  src: url('/dist/css/fonts/HoftypeCordaMedium.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaLight';
+  src: url('/dist/css/fonts/HoftypeCordaLight.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaLight';
+  src: url('/dist/css/fonts/HoftypeCordaLight.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaMedium';
+  src: url('/dist/css/fonts/HoftypeCordaMedium.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HoftypeCordaRegular';
+  src: url('/dist/css/fonts/HoftypeCordaRegular.woff2') format('woff2'),
+      url('/dist/css/fonts/HoftypeCordaRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden; 
+  @include above(lg3){
+    font-size: 62.5%;
+  }
+  @include between(md, md2){
+    font-size: 50.5%;
+  }
+  @include between(tb2, md){
+    font-size: 52.5%;
+  }
+
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,
+sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+ol,ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  width: 100%;
+  font-family: $dawat-font-hyft;
+  overflow-x: hidden;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  
+  }
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline-style: none;
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.com_container{
+  width: 88.88%;
+  max-width: 1920px;
+  margin: 0 auto;
+  @include below(md){
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+p {
+  font-family: "HoftypeCordaRegular";
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+
