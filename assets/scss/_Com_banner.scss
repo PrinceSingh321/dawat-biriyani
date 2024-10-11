@@ -1,0 +1,45 @@
+.banner{
+	width: 100%;
+	margin-top: 75px;
+	.banner-wrapper{
+		width: 100%;
+		position: relative;
+		.bannerSlidermain{
+			width: 100%;
+			.slideWrap{
+				width: 100%;
+				position: relative;
+				.img-box{
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
+				.text-wraper{
+					position: absolute;
+					top: 10%;
+					left: 50%;
+					z-index: 2;
+					transform: translate(-50%);
+					-webkit-transform: translate(-50%);
+					-moz-transform: translate(-50%);
+					text-align: center;
+					.title{
+						font-size: 11.188rem;
+						color: $golden-color;
+						font-family: $dawat-font-corda;
+						font-weight: bold;
+					}
+					.pargraph{
+                      p{
+					  color: $yellow-color;
+					  font-size: 4.063rem;
+					  font-family: $dawat-font-corda;
+					  font-weight: bold;
+					  }
+					}
+				}
+			}
+		}
+	}
+}
