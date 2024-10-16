@@ -357,4 +357,52 @@ p {
   line-height: 2.2rem;
 }
 
+.btn-cta-white{
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 2.4rem;
+  font-family: $dawat-font-corda;
+  font-weight: 500;
+  color: $balck-color;
+  text-align: center;
+  background: $white-color;
+  text-transform: uppercase;
+}
 
+.btn-cta{
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 2.4rem;
+  font-family: $dawat-font-corda;
+  font-weight: 500;
+  color: $balck-color;
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
+  border: $balck-color solid 1px;
+}
+
+
+h1, .white,h2 .white,h3 .white,h4 .white,h5 .white,h6 .white{
+  color: $white-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-size: 5.9rem;
+  font-family: $dawat-font-corda;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 100%;
+  color: $blue-color;
+}
+
+.sub_heading{
+  font-family: $dawat-font-corda;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: $balck-color;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}

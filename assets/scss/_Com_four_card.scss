@@ -1,0 +1,114 @@
+.Com_fourCard{
+	width: 100%;
+	padding: 100px 0 0px 0;
+	.heading-wrap{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 20px;
+	}
+	.Com_fourcard_Wrapper{
+		width: 100%;
+		position: relative;
+		.fourCardSlider{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			overflow: hidden;
+			&.swiper{
+				
+			}
+			.card-container{
+				width: 100%;
+				position: relative;
+				padding: 100px 0;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+					
+				.card-icon{
+                   width: 100%;
+				   display: inline-flex;
+				   justify-content: center;
+				   img{
+					max-width: 200px;
+				   }
+				}
+				
+				.card-heading{
+					width: 100%;
+					font-size: 3rem;
+					font-family: $dawat-font-corda;
+					font-weight: 500;
+					color: $blue-color;
+					text-align: center;
+					min-height: 70px;
+				}
+				.card-wrap{
+					display: inline-flex;
+					flex-direction: column;
+					height: 100%;
+				.card-text{
+					width: 100%;
+					padding: 20px 0px 40px 0;
+					min-height: 210px;
+					
+					p{
+						font-size: 2.4rem;
+						font-family: $dawat-font-corda;
+						font-weight: 200;
+						color: $balck-color;
+						line-height: 150%;
+						padding: 10px 0px;
+					}
+				}
+				.btn-wrap{
+					flex: 1 0 auto;
+				}
+			}
+			}
+			.swiper-slide{
+				position: relative;
+                &::before{
+					content: "";
+					position: absolute;
+					right: -30px;
+					width: 1px;
+					height: 65%;
+					background: $gray-color;
+					top: 15%;
+				}
+			}
+			.swiper-button-prev{
+				left: 0px;
+				border: $gray-color solid 1px;
+				padding: 10px 20px;
+				z-index: 10; /* Ensure buttons are above the content */
+				width: 40px;
+				height: 40px;
+				top: 44%;
+				&:after{
+					font-size: 1.5rem;
+					color: $gray-color;
+				}
+			}
+			.swiper-button-next{
+				right: 0px;
+				border: $gray-color solid 1px;
+				padding: 10px 20px;
+				z-index: 10; /* Ensure buttons are above the content */
+				width: 40px;
+				height: 40px;
+				top: 44%;
+				&:after{
+					font-size: 1.5rem;
+					color: $gray-color;
+				}
+			}
+		}
+		
+	}
+}

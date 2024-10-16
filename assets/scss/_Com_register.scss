@@ -1,0 +1,29 @@
+.Com_register{
+	width: 100%;
+	.register-wrapper{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.rigster-left-sec{
+			width: 60%;
+			.img-box{
+				width: 100%;
+				img{
+					width: 90%;
+				}
+			}
+		}
+		.register-right-sec{
+			width: 40%;
+			.heading-wrap{
+				width: 100%;
+				text-align: left;
+				.sub_heading{
+					width: 100%;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
