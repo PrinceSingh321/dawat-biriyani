@@ -367,6 +367,23 @@ p {
   text-align: center;
   background: $white-color;
   text-transform: uppercase;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  &:hover{
+    background: $blue-color;
+    color: $white-color;
+  }
+  @include below(lgMid1){
+    font-size: 2rem;
+  }
+  @include below(md){
+    font-size: 1.5rem;
+  }
+  @include below(sm){
+    font-size: 1.4rem;
+  }
 }
 
 .btn-cta{
@@ -380,6 +397,23 @@ p {
   background: transparent;
   text-transform: uppercase;
   border: $balck-color solid 1px;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  &:hover{
+    background: $balck-color;
+    color: $white-color;
+  }
+  @include below(lgMid1){
+    font-size: 2rem;
+  }
+  @include below(md){
+    font-size: 1.5rem;
+  }
+  @include below(sm){
+    font-size: 1.4rem;
+  }
 }
 
 
@@ -394,6 +428,15 @@ h1,h2,h3,h4,h5,h6{
   text-transform: capitalize;
   line-height: 100%;
   color: $blue-color;
+  @include below(lg3mid){
+    font-size: 4.8rem;
+  }
+  @include below(md){
+    font-size: 3.8rem;
+  }
+  @include below(sm){
+    font-size: 3.4rem;
+  }
 }
 
 .sub_heading{
@@ -405,4 +448,37 @@ h1,h2,h3,h4,h5,h6{
   padding: 10px 0;
   width: 100%;
   text-align: center;
+  @include below(lg3mid){
+    font-size: 2rem;
+  }
+  @include below(md){
+    font-size: 1.5rem;
+  }
+  @include below(sm){
+    font-size: 1.4rem;
+  }
+
+
+}
+
+.mtop-30{
+  margin-top: 30px;
+}
+p{
+  @include below(sm){
+    font-size: 1.6rem!important;
+  }
+}
+.backTopbtn{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+.swiper-button-next, .swiper-button-prev{
+  @include below(sm){
+    width: 25px!important;
+    height: 25px!important;
+    padding: 13px 13px!important;
+  }
 }

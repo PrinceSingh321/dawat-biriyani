@@ -43,13 +43,13 @@ $(".fourCardSlider").each(function() {
       var nextButton = $this.find('.swiper-button-next');
       var prevButton = $this.find('.swiper-button-prev');
       
-      if (numberOfSlides > 4) {
-          nextButton.show();
-          prevButton.show();
-      } else {
-          nextButton.hide();
-          prevButton.hide();
-      }
+      // if (numberOfSlides > 4) {
+      //     nextButton.show();
+      //     prevButton.show();
+      // } else {
+      //     nextButton.hide();
+      //     prevButton.hide();
+      // }
   }
 
   // Initial check

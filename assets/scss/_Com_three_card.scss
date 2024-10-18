@@ -1,6 +1,9 @@
 .Com_threeCard{
 	width: 100%;
 	padding: 0px 0 50px 0;
+	@include below(tb){
+		padding: 50px 0 50px 0;
+	}
 	.heading-wrap{
 		width: 100%;
 		display: flex;
@@ -8,11 +11,18 @@
 		align-items: center;
 		justify-content: center;
 		padding: 20px 20px;
+		@include below(tb){
+			text-align: center;
+			padding: 0;
+		}
 	}
 	
 	.Com_threecard_Wrapper{
 		width: 100%;
 		margin-top: 50px;
+		@include below(tb){
+			margin-top: 10px;
+		}
 		.threeCardSlider{
 		  width: 100%;
 		  &.hide-line{
@@ -21,6 +31,11 @@
 					display: none;
 				}
 			}
+			.card-container{
+				.card-img-item{
+					width: 80%;
+				}
+			} 
 		}
 		  .card-container{
 			width: 100%;
@@ -37,11 +52,19 @@
 			  text-transform: capitalize;
 			  color: $blue-color;
 			  text-align: center;
+			  @include below(lg3mid){
+				font-size: 2.4rem;
+			  }
 			}
 			.card-img-item{
 			  width: 100%;
+			  overflow: hidden;
 			  img{
 				width: 100%;
+				transition: 1s ease;
+				&:hover{
+					transform: scale(1.05);
+				}
 			  }
 			}
 			.text-wrap{
@@ -50,6 +73,10 @@
 			  height: 100%;
 			  .card-text-item{
 				width: 100%;
+				min-height: 140px;
+				@include below(sm){
+					min-height: auto;
+				}
 				p{
 				  font-size: 2.4rem;
 				  font-family: $dawat-font-corda;
@@ -57,14 +84,28 @@
 				  color: $balck-color;
 				  line-height: 150%;
 				  padding: 10px 10px;
+				  @include below(lg3mid){
+					font-size: 2rem;
+				  }
+				  @include below(md){
+					font-size: 1.5rem;
+				  }
 				}
 				&.bold-text{
+					padding-top: 40px;
+					min-height: 116px;
+					@include below(sm){
+						min-height: auto;
+					}
 					p{
 						font-size: 3rem;
 						font-family: $dawat-font-corda;
 						font-weight: 500;
 						color: $balck-color;
 						line-height: 100%;
+						@include below(lg3mid){
+							font-size: 2.2rem;
+						}
 					}
 					
 				}
@@ -85,11 +126,14 @@
 				height: 65%;
 				background: $gray-color;
 				top: 15%;
+				@include below(sm){
+					display: none;
+				}
 			}
 			
 		}
 		.swiper-button-prev{
-			left: 7px;
+			left: 0px;
 			border: $gray-color solid 1px;
 			padding: 10px 20px;
 			z-index: 10; /* Ensure buttons are above the content */
@@ -102,7 +146,7 @@
 			}
 		}
 		.swiper-button-next{
-			right: 7px;
+			right: 0px;
 			border: $gray-color solid 1px;
 			padding: 10px 20px;
 			z-index: 10; /* Ensure buttons are above the content */

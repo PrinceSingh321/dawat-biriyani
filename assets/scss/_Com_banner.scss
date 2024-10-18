@@ -1,6 +1,9 @@
 .banner{
 	width: 100%;
 	margin-top: 75px;
+	@include below(tb){
+		margin-top: 63px;
+	}
 	.banner-wrapper{
 		width: 100%;
 		position: relative;
@@ -24,11 +27,26 @@
 					-webkit-transform: translate(-50%);
 					-moz-transform: translate(-50%);
 					text-align: center;
+					@include below(md){
+						width: 90%;
+					}
+					@include below(tb){
+						width: 90%;
+					}
 					.title{
 						font-size: 11.188rem;
 						color: $golden-color;
 						font-family: $dawat-font-corda;
 						font-weight: bold;
+						@include below(md){
+							font-size: 8.188rem;
+						}
+						@include below(tb){
+							font-size: 9.188rem;
+						}
+						@include below(sm){
+							font-size: 5.188rem;
+						}
 					}
 					.pargraph{
                       p{
@@ -36,6 +54,12 @@
 					  font-size: 4.063rem;
 					  font-family: $dawat-font-corda;
 					  font-weight: bold;
+					  @include below(tb){
+						font-size: 3.063rem;
+					 }
+					 @include below(tb){
+						font-size: 2.063rem;
+					}
 					  }
 					}
 				}
@@ -48,6 +72,9 @@
 			transform: translate(-50%);
 			-webkit-transform: translate(-50%);
 			z-index: 2;
+			@include below(sm){
+				bottom: 10%;
+			}
 		}
 	}
 }

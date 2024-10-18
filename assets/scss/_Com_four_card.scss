@@ -1,6 +1,9 @@
 .Com_fourCard{
 	width: 100%;
 	padding: 100px 0 0px 0;
+	@include below(tb){
+		padding: 30px 0 0px 0;
+	}
 	.heading-wrap{
 		width: 100%;
 		display: flex;
@@ -8,6 +11,9 @@
 		align-items: center;
 		justify-content: center;
 		padding: 20px 20px;
+		@include below(tb){
+		  padding: 15px 0px;
+		}
 	}
 	.Com_fourcard_Wrapper{
 		width: 100%;
@@ -28,6 +34,9 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				@include below(tb){
+					padding: 30px 0;
+				}
 					
 				.card-icon{
                    width: 100%;
@@ -46,6 +55,20 @@
 					color: $blue-color;
 					text-align: center;
 					min-height: 70px;
+					@include below(lg3mid){
+						min-height: 57px;
+						font-size: 2.4rem;
+					}
+					@include below(md){
+						min-height: auto;
+						font-size: 2rem;
+					}
+					@include below(tb){
+						min-height: auto;
+					}
+					@include below(xs){
+						padding: 0 40px;
+					}
 				}
 				.card-wrap{
 					display: inline-flex;
@@ -55,6 +78,10 @@
 					width: 100%;
 					padding: 20px 0px 40px 0;
 					min-height: 210px;
+					@include below(lg3mid){
+						padding: 20px 0 40px 10px;
+						min-height: auto;
+					}
 					
 					p{
 						font-size: 2.4rem;
@@ -63,6 +90,13 @@
 						color: $balck-color;
 						line-height: 150%;
 						padding: 10px 0px;
+						@include below(lg3mid){
+							font-size: 2rem;
+						}
+						@include below(md){
+							min-height: auto;
+							font-size: 1.5rem;
+						}
 					}
 				}
 				.btn-wrap{
@@ -80,6 +114,9 @@
 					height: 65%;
 					background: $gray-color;
 					top: 15%;
+					@include below(sm){
+						display: none;
+					}
 				}
 			}
 			.swiper-button-prev{

@@ -12,12 +12,80 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    #nav-icon3 {
+      @include below(tb){
+      width: 30px;
+      height: 21px;
+      display: block;
+      position: absolute;
+      margin: 0 auto;
+      transform: rotate(0);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      right: 20px;
+      top: 24px;
+      z-index: 101;
+     
+      span{
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        margin: 0 10%;
+        background: #000;
+        border-radius: 25px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0);
+        transition: .25s ease-in-out;
+        &:nth-child(2),  &:nth-child(3){
+          top: 8px;
+      }
+        &:nth-child(4){
+          top: 16px;
+      }
+        }
+        
+
+      &.open{
+        span{
+        &:nth-child(1) {
+          top: 18px;
+          width: 0%;
+          left: 50%;
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    &:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+  }
+  
+      }
+    }
+      }
+  }
+    @include below(tb){
+      padding: 15px 0;
+    }
     .logo {
       width: 13%;
       position: relative;
+      @include below(tb){
+        width: 20%;
+      }
+      @include below(sm){
+        width: 30%;
+      }
       img{
         width: auto;
         position: absolute;
+        z-index: 2;
       }
   }
   .left-menu{
@@ -25,16 +93,61 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 87%;
+    @include below(tb){
+      width: 100%;
+      justify-content: flex-end;
+    }
     .navbar {
       width: 100%;
+      @include below(tb){
+        position: fixed;
+        width: 100%;
+        right: -100%;
+        top: 63px;
+        background: $white-color;
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+        transition: all .4s ease-in-out;
+        -webkit-overflow-scrolling: touch;
+        touch-action: auto;
+        z-index: 9;
+        
+        &.open {
+          right: 0;
+          .nav-wrap{
+            li{
+              &.drop-down-nemu{
+                .sub-menu{
+                  li{
+                    a{
+                       color: $white-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+      }
+      }
+      
       .nav-wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: flex-end;
+       
         li{
           position: relative;
           padding: 22px 18px;
+          @include below(md){
+            padding: 22px 8px;
+           
+          }
+          @include below(tb){
+            display: block;
+            width: 100%;
+            padding: 15px 15px;
+          }
           a{
             text-decoration: none;
             padding: 27px 10px;
@@ -44,12 +157,127 @@ header{
             font-weight: 400;
             position: relative;
             text-transform: uppercase;
+            @include below(md){
+             font-size: 1.3rem;
+            }
+            @include below(tb){
+              width: 100%;
+              display: block;
+              padding: 0;
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              width: calc(100% + 36px);
+              height: 4px;
+              background: $blue-color;
+              bottom: 0px;
+              left: -18px;
+              transform: scale(0);
+              transition: .3s all ease-out;
+              @include below(tb){
+                display: none!important;
+              }
+            }
           }
+          &:hover{
+            a{
+              color: $blue-color;
+              &::before{
+                display: block;
+                transform: scale(1);
+                @include below(tb){
+                 transform: none;
+                }
+              }
+            }
+            .sub-menu{
+              display: block;
+              @include below(tb){
+                display: none;
+               }
+              li{
+                a{
+                  color: $balck-color;
+                }
+              }
+            }
+           
+          }
+          &.drop-down-nemu{
+            a{
+            &::after{
+              border-left: 4px solid transparent;
+              border-right: 4px solid transparent;
+              border-top: 4px solid $balck-color;
+              content: "";
+              position: absolute;
+              right: -6px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            
+            }
+            &:hover{
+              a{
+              &::after{
+                border-top: 4px solid $blue-color;
+              }
+              
+            }
+            }
+          }
+          .sub-menu{
+            width: 100%;
+            position: absolute;
+            top: 69px;
+            left: 0;
+            white-space: nowrap;
+            background: $white-color;
+            text-align: center;
+            display: none;
+            @include below(tb){
+              position: relative;
+              text-align: left;
+              top: 0;
+              padding: 10px 10px;
+              background: $blue-color;
+              margin-top: 15px;
+            }
+            li{
+              display: block;
+              padding: 10px 0;
+              &:hover{
+                a{
+                  color: $blue-color;
+              }
+            }
+              a{
+                padding: 0;
+                font-size: 1.5rem;
+                @include below(sm){
+                  font-size: 1.2rem;
+                }
+                &::after{
+                  display: none;
+                }
+                &::before{
+                  display: none!important;
+                }
+              }
+             
+            }
+          }
+          
         }
     }
   }
   .search-icon{
     padding-left: 3%;
+    @include below(tb){
+      position: relative;
+      right: 14%;
+    }
   }
   }
 }

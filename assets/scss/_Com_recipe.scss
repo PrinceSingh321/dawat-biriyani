@@ -1,5 +1,8 @@
 .Com_recipe_Section{
 	width: 100%;
+	@include below(sm){
+		margin-bottom: 120px;
+	}
 	.recipe_wrapper{
 		width: 100%;
 		position: relative;
@@ -18,27 +21,77 @@
 			left: 50%;
 			transform: translate(-50%);
 			text-align: center;
+			@include below(tb){
+				top: 10%;
+			}
+			@include below(sm){
+				top: 3%;
+			}
+			.white{
+				@include below(sm){
+					font-size: 2.4rem;
+				}
+			}
 		}
 		.recipe-wrapper{
 			width: 45%;
 			position: absolute;
 			top: 32%;
 			right: 0;
+			@include below(tb){
+				top: 26%;
+			}
+			@include below(sm){
+				width: 80%;
+				top: 82%;
+				right: inherit;
+				left: 0;
+				background: #fff;
+				box-shadow: rgba(0, 0, 0,  0.25) 0 3px 11px;
+				padding: 36px 0;
+			}
+			
 
 			.recipe-text-wrap{
 				width: 100%;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: start;
+				@include below(sm){
+					justify-content: center;
+				}
+				.btn-cta-white{
+					@include below(sm){
+						background: $blue-color;
+						color: $white-color;
+					}
+				}
 				.recipe-text{
 					width: 100%;
 					padding: 50px 0;
+					@include below(lg3mid){
+						padding: 15px 0;
+					}
 					p{
 						font-size: 4.4rem;
 						font-family: $dawat-font-corda;
 						font-weight: 500;
 						color: $white-color;
 						line-height: 150%;
+						@include below(lg3mid){
+							font-size: 3.4rem;
+						}
+						@include below(md){
+							font-size: 2.4rem;
+						}
+						@include below(tb){
+							font-size: 2.2rem;
+						}
+						@include below(sm){
+							color: $balck-color;
+							text-align: center;
+							font-size: 1.8rem;
+						}
 					}
 				}
 			}

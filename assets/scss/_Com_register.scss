@@ -5,8 +5,25 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		.register-heading-mob{
+			@include above(tb){
+				display: none;
+			}
+		}
+		@include below(tb){
+			flex-wrap: wrap;
+			padding-top: 50px;
+		}
+		h1{
+			@include below(tb){
+				padding-bottom: 50px;
+			}
+		}
 		.rigster-left-sec{
 			width: 60%;
+			@include below(tb){
+				width: 100%;
+			}
 			.img-box{
 				width: 100%;
 				img{
@@ -16,12 +33,25 @@
 		}
 		.register-right-sec{
 			width: 40%;
+			@include below(tb){
+				width: 100%;
+				text-align: center;
+				position: relative;
+				top: -30px;
+				padding-bottom: 30px;
+			}
 			.heading-wrap{
 				width: 100%;
 				text-align: left;
+				@include below(tb){
+					text-align: center;
+				}
 				.sub_heading{
 					width: 100%;
 					text-align: left;
+					@include below(tb){
+						text-align: center;
+					}
 				}
 			}
 		}

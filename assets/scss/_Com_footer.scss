@@ -19,21 +19,74 @@ footer {
 	display: flex;
 	align-items: flex-start;
 	margin: 0 auto;
+	@include below(sm){
+		flex-wrap: wrap;
+	}
 }
 .footer-col {
 	width: 33.3%;
+	@include below(sm){
+		width: 100%;
+	}
+	&:nth-child(2){
+		.footer-head{
+			&::after{
+				@include below(sm){
+					content: "";
+					position: absolute;
+					right: 16px;
+					top: 35%;
+					transform: translateY(-50%);
+					width: 10px;
+					left: auto;
+					height: 10px;
+					border-top: 1px solid $white-color;
+					border-left: 1px solid $white-color;
+					background: 0 0;
+					transform: rotate(-135deg);
+				}
+			}
+		}
+	}
+	&:nth-child(3){
+		.footer-head{
+			&:nth-child(2){
+			@include below(sm){
+				background: transparent;
+			}
+		 }
+		}
+	}
 	ul {
+		@include below(sm){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 		li {
 			text-transform: uppercase;
 			line-height: 1.1;
 			padding-bottom: 18px;
+			@include below(sm){
+				width: 47%;
+				padding-bottom: 10px;
+			}
 			a {
 				color: $white-color;
         font-family: $dawat-font-hyft;
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: normal;
+		@include below(sm){
+			font-size: 1.2rem;
+		}
 			}
+		}
+	}
+	.footer-detail-wrap{
+		width: 100%;
+		@include below(sm){
+			display: none;
 		}
 	}
 }
@@ -44,6 +97,12 @@ footer {
 	color: $white-color;
 	font-weight: bold;
   font-family: $dawat-font-hyft-bold;
+  @include below(sm){
+	background: $gray-color2;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	position: relative;
+  }
 }
 .footer-detail {
 	color: $white-color;
@@ -52,6 +111,20 @@ footer {
 	font-size: 1.3rem;
 	line-height: 1.5rem;
 	display: flex;
+	@include below(sm){
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	p{
+		@include below(sm){
+			width: 85%;
+		}
+		br{
+			@include below(sm){
+				display: none;
+			}
+		}
+	}
 	span.ft-icon {
 		padding-top: 3px;
 		padding-right: 15px;
@@ -118,10 +191,16 @@ footer {
 .footer-social {
 	padding: 18px 0 10px;
 	ul {
+		@include below(sm){
+			justify-content: center;
+		}
 		li {
 			display: inline-block;
 			margin-right: 12px;
 			padding-bottom: 0;
+			@include below(sm){
+				width: auto;
+			}
 		}
 	}
 }
@@ -131,6 +210,9 @@ footer {
 	line-height: 1.5rem;
 	margin-bottom: 10px;
   font-family: $dawat-font-corda;
+  @include below(sm){
+	text-align: center;
+  }
 }
 .footerCopyright {
 	background: $black-color-light;
