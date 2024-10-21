@@ -86,6 +86,7 @@ header{
         width: auto;
         position: absolute;
         z-index: 2;
+        top:-10px;
       }
   }
   .left-menu{
@@ -138,9 +139,13 @@ header{
        
         li{
           position: relative;
-          padding: 22px 18px;
+          padding: 22px 10px;
           @include below(md){
             padding: 22px 8px;
+           
+          }
+          @include below(tb2){
+            padding: 22px 6px;
            
           }
           @include below(tb){
@@ -168,11 +173,11 @@ header{
             &::before {
               content: '';
               position: absolute;
-              width: calc(100% + 36px);
+              width: calc(100% + 19px);
               height: 4px;
               background: $blue-color;
               bottom: 0px;
-              left: -18px;
+              left: -9px;
               transform: scale(0);
               transition: .3s all ease-out;
               @include below(tb){

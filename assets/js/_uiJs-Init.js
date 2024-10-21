@@ -8,4 +8,5 @@ fnRegisterHeading();
 fnFotterAccordian();
 fnScrollDown();
 fnbottomToTop();
-fnAnimation();
+//fnAnimation();
+fnParllexBar();

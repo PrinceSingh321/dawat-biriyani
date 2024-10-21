@@ -1,7 +1,7 @@
 .Com_recipe_Section{
 	width: 100%;
 	@include below(sm){
-		margin-bottom: 120px;
+		margin-bottom: 160px;
 	}
 	.recipe_wrapper{
 		width: 100%;
@@ -17,12 +17,12 @@
 		.heading-wrap{
 			width: 100%;
 			position: absolute;
-			top: 14%;
+			top: 6%;
 			left: 50%;
 			transform: translate(-50%);
 			text-align: center;
 			@include below(tb){
-				top: 10%;
+				top:2%;
 			}
 			@include below(sm){
 				top: 3%;
@@ -36,7 +36,7 @@
 		.recipe-wrapper{
 			width: 45%;
 			position: absolute;
-			top: 32%;
+			top: 23%;
 			right: 0;
 			@include below(tb){
 				top: 26%;

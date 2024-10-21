@@ -4,6 +4,7 @@ function fnNavbar(){
     $(this).toggleClass('open');
  })
 
+ 
 $('.drop-down-nemu > a').on('click', function(e) {
     e.preventDefault();
     var $currentSubMenu = $(this).siblings('.sub-menu');

@@ -38,6 +38,7 @@
 						color: $golden-color;
 						font-family: $dawat-font-corda;
 						font-weight: bold;
+						line-height: 100%;
 						@include below(md){
 							font-size: 8.188rem;
 						}
