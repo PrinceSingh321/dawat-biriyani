@@ -352,3 +352,43 @@ const gsapTimeLine2 = gsap.timeline({
     }       
    
   }
+
+  
+  $('[data-fancybox="videos"]').fancybox({
+    loop : false,
+    groupAll: false,
+    transitionDuration : 100,
+    animationDuration : 500,
+    animationEffect : "fade",
+    buttons : [
+        //'slideShow',
+        //'fullScreen',
+        //'thumbs',
+        //'share',
+        //'download',
+        //'zoom',
+        'close'
+    ],
+    slideShow : {
+        autoStart : false,
+        speed     : 300,
+    },
+    thumbs : {
+    autoStart : false,
+    },
+    // beforeShow: function() {
+    //     mySwiper.autoplay.stop();
+    //   },
+    //   afterClose: function() {
+    //     mySwiper.autoplay.start();
+    //   }
+}); 
+
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) { // adjust value as needed
+        document.querySelector('header').classList.add('fixed');
+    } else {
+        document.querySelector('header').classList.remove('fixed');
+    }
+});

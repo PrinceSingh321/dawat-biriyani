@@ -12,6 +12,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    transition: 0.3s all;
     #nav-icon3 {
       @include below(tb){
       width: 30px;
@@ -83,10 +84,11 @@ header{
         width: 30%;
       }
       img{
-        width: auto;
+        width: 100%;
         position: absolute;
         z-index: 2;
         top:-10px;
+        transition: 0.3s all;
       }
   }
   .left-menu{
@@ -117,7 +119,7 @@ header{
           right: 0;
           .nav-wrap{
             li{
-              &.drop-down-nemu{
+              &.drop-down-memu{
                 .sub-menu{
                   li{
                     a{
@@ -140,6 +142,7 @@ header{
         li{
           position: relative;
           padding: 22px 10px;
+          transition: 0.3s all;
           @include below(md){
             padding: 22px 8px;
            
@@ -209,7 +212,7 @@ header{
             }
            
           }
-          &.drop-down-nemu{
+          &.drop-down-memu{
             a{
             &::after{
               border-left: 4px solid transparent;
@@ -285,5 +288,170 @@ header{
     }
   }
   }
+}
+ &.fixed{
+  .headerWrapper{
+    @include below(tb){
+      padding: 8px 0;
+      transition: 0.3s all;
+    }
+    .logo{
+      img{
+        width: 140px;
+        transition: 0.3s all;
+      }
+    }
+    .left-menu{
+      .navbar{
+        .nav-wrap{
+          li{
+            transition: 0.3s all;
+            //padding: 10px 10px;
+            a{
+              &::before{
+                //bottom: 11px;
+              }
+            }
+            .sub-menu{
+              //top: 43px;
+            }
+          }
+        } 
+      } 
+    } 
+    #nav-icon3{
+      @include below(tb){
+        top: 15px;
+      }
+    }
+  } 
+ }
+}
+
+.SearchOverlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  transition: 0.3s all;
+  transform: translateY(-100%);
+  &.active{
+    transform: translateY(0);
+  }
+  .searchBoxWrapper {
+    position: fixed;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    background: #eaeaea;
+    padding: 40px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    @include below(tb){
+      width: 90%;
+    }
+    .close-serachbox {
+      position: absolute;
+      right: 50px;
+      top: 30px;
+      color: #000;
+      font-size: 30px;
+      font-family: "HoftypeCordaBold";
+      font-weight: bold;
+      cursor: pointer;
+  }
+  h3{
+    &.searchTitle {
+      font-family: $dawat-font-corda;
+      font-weight: lighter;
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: $balck-color;
+
+  }
+  }
+  .searchInput {
+    .search-wrap{
+      width: 100%;
+      position: relative;
+      .search-icon{
+        width: 20px;
+        position: absolute;
+        right: 0;
+        bottom: 13px;
+        cursor: pointer;
+        z-index: 1;
+        background: transparent;
+        filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(0%) hue-rotate(188deg) brightness(101%) contrast(102%);
+      }
+     }
+  input{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    //padding: 0 60px 0 0px;
+    font-size: 1.8rem;
+    background: transparent;
+    border-bottom: $balck-color solid 1px;
+    font-family: $dawat-font-corda;
+    font-weight: lighter;
+  }
+  .resultBox {
+    padding: 10px 0;
+    max-height: 280px;
+    overflow-y: auto;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: block;
+
+    ul{
+      list-style: none;
+      border-bottom: $balck-color solid 1px;
+      margin-bottom: 15px;
+    li {
+      list-style: none;
+      padding: 0 0 10px 0;
+      display: block;
+      width: 100%;
+      cursor: default;
+      border-radius: 3px;
+      font-size: 1.8rem;
+      color: $balck-color;
+      font-family: $dawat-font-corda;
+      font-weight: lighter;
+      cursor: pointer;
+  }
+}
+}
+ 
+ }
+ .recent-search{
+  width: 100%;
+  padding: 30px 0;
+  ul{
+    list-style: none;
+  li {
+    list-style: none;
+    padding: 0 0 10px 0;
+    display: block;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+    font-size: 1.8rem;
+    color: $balck-color;
+    font-family: $dawat-font-corda;
+    font-weight: lighter;
+    cursor: pointer;
+}
+}
+ }
 }
 }

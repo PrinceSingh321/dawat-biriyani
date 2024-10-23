@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daawat</title>
 <link rel="stylesheet" href="dist/plugin/css/swiper-bundle.min.css"/>
-<!-- <link rel="stylesheet" href="dist/plugin/css/fullpage.min.css"/> -->
-<!-- <link rel="stylesheet" href="dist/plugin/css/aos.css" /> -->
+<link rel="stylesheet" href="dist/plugin/css/jquery.fancybox.min.css" />
 <link rel="stylesheet" type="text/css" href="dist/css/bundle.css?v=1">
 </head>
 
@@ -23,10 +22,16 @@
               <ul class="nav-wrap">
                 <li><a href="">ABOUT US</a></li>
                 <li><a href="">OUR RANGE</a></li>
-                <li><a href="">RECIPE CORNER</a></li>
+                <li class="drop-down-memu"><a href="javascript:;">RECIPE CORNER</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Recipe</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Kitchen Hacks</a></li>
+                  </ul>
+                </li>
                 <li><a href="">ACADEMY</a>
                 </li>
-                <li class="drop-down-nemu"><a href="javascript:;">MEDIA & TRENDS</a>
+                <li class="drop-down-memu"><a href="javascript:;">MEDIA & TRENDS</a>
                  <ul class="sub-menu">
                    <li><a href="">IN THE NEWS</a></li>
                    <li><a href="">EVENTS</a></li>
@@ -38,12 +43,41 @@
               </ul>
             </nav>
           </div>
-          <div class="search-icon"> <a href=""><img src="dist/images/search_icon.svg" alt="search" title="search"></a> </div>
+          <div class="search-icon"> <a href="javascript:;"><img src="dist/images/search_icon.svg" alt="search" title="search"></a> </div>
         </div>
       </div>
      
   </div>
 </header>
+
+<div class="SearchOverlay">
+  <div class="searchBoxWrapper">
+    <div class="close-serachbox">✕</div>
+    <h3 class="searchTitle">Search :</h3>
+
+    <div class="searchInput active">
+      <div class="search-wrap">
+      <input type="search" placeholder="Search..">
+      <button class="search-icon"><img src="dist/images/search_icon.svg"></button>
+    </div>
+      <div class="resultBox">
+        <ul>
+        <li>Daawat</li>
+        <li>Daawat</li>
+      </ul>
+       <a href="javascript:;" class="view-all-btn">View All </a>
+      </div>
+
+      <div class="recent-search">
+        <h3 class="searchTitle">Recent Search :</h3>
+        <ul>
+           <li>About Dawat</li>
+        </ul>
+        <a href="javascript:;" class="view-all-btn">Explore All </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="smooth-wrapper">
   <div id="smooth-content">
@@ -142,7 +176,7 @@
                        <p>Daawat aims at bringing only the finest grains to your kitchen to keep your customers satisfied and delighted</p>
                      </div>
                      <div class="btn-wrap">
-                     <a href="" class="btn-cta">Watch Now</a>
+                     <a href="https://www.youtube.com/watch?v=8Q6lpQwjRXo" class="btn-cta" data-fancybox="videos">Watch Now</a>
                     </div>
                     </div>
                   </div>
@@ -159,7 +193,7 @@
                        <p>We recommend products that will compliment your delectable recipes.</p>
                      </div>
                      <div class="btn-wrap">
-                     <a href="" class="btn-cta">Know More</a>
+                      <a href="https://www.youtube.com/watch?v=8Q6lpQwjRXo" class="btn-cta" data-fancybox="videos">Watch Now</a>
                     </div>
                     </div>
                   </div>
@@ -176,7 +210,7 @@
                        <p>Present across 150 towns and 350 channel partners, pan India.</p>
                      </div>
                      <div class="btn-wrap">
-                     <a href="" class="btn-cta">Know More</a>
+                      <a href="https://www.youtube.com/watch?v=8Q6lpQwjRXo" class="btn-cta" data-fancybox="videos">Watch Now</a>
                     </div>
                   </div>
                   </div>
@@ -193,14 +227,13 @@
                        <p>We promise to assist you even after your purchase.</p>
                      </div>
                      <div class="btn-wrap">
-                     <a href="" class="btn-cta">Read More</a>
+                      <a href="https://www.youtube.com/watch?v=8Q6lpQwjRXo" class="btn-cta" data-fancybox="videos">Watch Now</a>
                     </div>
                     </div>
                   </div>
                 </div>
-
                 
-
+                
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -384,7 +417,7 @@
                <div class="sub_heading">Partner with Daawat Professionals and bring <br> world-class rice dishes to your guests.  </div>
              </div>
              <div class="btn-wrap mtop-30">
-               <a href="" class="btn-cta">Watch Now</a>
+               <a href="" class="btn-cta">Register Now</a>
               </div>
             </div>
        </div>
@@ -479,9 +512,6 @@
     <script type="text/javascript" src="dist/plugin/js/ScrollSmoother.min.js"></script>
     <script type="text/javascript" src="dist/plugin/js/ScrollToPlugin.min.js"></script>
     <script type="text/javascript" src="dist/plugin/js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="dist/plugin/js/fullpage.min.js"></script>
-    <!-- <script type="text/javascript" src="dist/plugin/js/customPluginbundle.js"></script> -->
-    <!-- <script src="dist/plugin/js/aos.js"></script> -->
     <script type="text/javascript" src="dist/js/customJsbundle.js?v=9878787"></script> 
 
    

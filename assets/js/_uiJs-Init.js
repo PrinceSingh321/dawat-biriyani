@@ -10,3 +10,4 @@ fnScrollDown();
 fnbottomToTop();
 //fnAnimation();
 fnParllexBar();
+fnSeacrhbar()

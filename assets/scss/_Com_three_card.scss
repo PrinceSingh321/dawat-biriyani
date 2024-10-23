@@ -19,7 +19,7 @@
 	
 	.Com_threecard_Wrapper{
 		width: 100%;
-		margin-top: 50px;
+		margin-top: 10px;
 		@include below(tb){
 			margin-top: 10px;
 		}
@@ -34,6 +34,7 @@
 			.card-container{
 				.card-img-item{
 					width: 80%;
+					border-radius: 50px;
 				}
 			} 
 		}
@@ -57,8 +58,11 @@
 			  }
 			}
 			.card-img-item{
-			  width: 100%;
+			  width: 80%;
 			  overflow: hidden;
+			  @include below(tb){
+				width: 100%;
+			  }
 			  img{
 				width: 100%;
 				transition: 1s ease;
@@ -123,9 +127,9 @@
 				position: absolute;
 				right: -30px;
 				width: 1px;
-				height: 65%;
+				height: 85%;
 				background: $gray-color;
-				top: 15%;
+				top: 0;
 				@include below(sm){
 					display: none;
 				}
